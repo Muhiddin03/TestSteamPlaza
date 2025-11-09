@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Plaza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="header">
+        <h1> Xush Kelibsiz!</h1>
+        <p>20 ta testdan iborat imtihon</p>
+    </div>
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+    <div class="quiz-container" id="quiz-container">
+        <div class="question-number" id="question-number">Savol 1/20</div>
+        <div class="question" id="question">Bu yerda savol ko'rsatiladi</div>
+        <div class="options" id="options"></div>
+    </div>
+    <div class="result-container hidden" id="success-container">
+        <div class="success">
+            <div class="result-icon">🎉</div>
+            <div class="result-title">Ajoyib!</div>
+            <div class="result-message">Siz to'g'ri javob berdingiz!</div>
+            <div class="seat-number" id="success-seat">Stol: 1</div>
+        </div>
+    </div>
+    <div class="result-container hidden" id="failure-container">
+        <div class="failure">
+            <div class="result-icon">😔</div>
+            <div class="result-title">Xato!</div>
+            <div class="result-message">Siz xato javob berdingiz!</div>
+            <div class="seat-number" id="failure-seat">Stol: 1</div>
+        </div>
+    </div>
+</div>
+
+<!-- Audio -->
+<audio id="wrong-sound-1" src="https://assets.mixkit.co/sfx/preview/mixkit-applause-1.ogg" preload="auto"></audio>
+<audio id="wrong-sound-2" src="yay-6326.mp3" preload="auto"></audio>
+<audio id="wrong-sound-3" src="https://actions.google.com/sounds/v1/cartoon/fail_trombone.ogg" preload="auto"></audio>
+
+<audio id="correct-sound-1" src="tugadi.wav" preload="auto"></audio>
+<audio id="correct-sound-2" src="tugadi2.mp3" preload="auto"></audio>
+<audio id="correct-sound-3" src="https://actions.google.com/sounds/v1/cartoon/balloon_pop.ogg" preload="auto"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
