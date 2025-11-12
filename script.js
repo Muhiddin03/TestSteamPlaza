@@ -150,7 +150,7 @@ function nextQuestion(){
         alert("Siz barcha savollarni yakunladingiz!");
         currentQuestion=0;
         // Yangi o'yin uchun stol raqamlarini qayta aralashtirish
-        seats = shuffle(Array.from({length:20},(_,i)=>i+1));
+        seats = shuffle(Array.from({length:18},(_,i)=>i+1));
         seatIndex = 0;
     }
     showQuestion();
