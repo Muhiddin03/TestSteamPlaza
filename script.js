@@ -14,11 +14,9 @@ const questions = [
 
     { question: "Klaviaturadagi Backspace tugmasini bosilsa nima bo'ladi?", options: ["Oxirgi yozilgan belgini o‘chiradi", "Yangi fayl yaratadi", "Kompyuterni o‘chiradi"], correct: 0 },
 
-    { question: "Kompyuter tilini o‘zgartirish uchun klaviaturani qaysi tugmalari ishlatiladi?", options: ["Alt + Shift", "Delete", "Shift + Ctrl", "Shit + A"], correct: 0 },
-
+   
     { question: "Bo’sh joy tashash uchun klaviaturaning qaysi tugmasidan foydalanamiz?", options: ["Shift", "Delete", "Probil"], correct: 2 },
 
-    { question: "Kompyuterga yozish uchun qaysi qurilma ishlatiladi?", options: [ "Monitor", "Printer", " Klaviatura"], correct: 2 },
 
     { question: "Kompyuterning qo‘shimcha qurilmasini  toping?", options: ["Sistema blog", "Klaviatura",  "Sichqoncha"], correct: 2 },
     
