@@ -1,24 +1,48 @@
 const questions = [
-    { question: "Kompyuterning asosiy qurilmalari qaysi javobda to'gri berilgan?", options: ["CPU (Markaziy protsessor)", "Monitor,Mishka,Printer", "Sistema Blog,Klaviatura", "Klaviatura, Monitor,Sistema Blok"], correct: 3 },
-    { question: "Kompyuterning qo‘shimcha qurilmasini toping?", options: ["Sistema blog", "Klaviatura", "Monitor", "Sichqoncha"], correct: 3 },
-    { question: "Papka nima uchun ishlatiladi?", options: ["Ma'lumotlarni tartib bilan saqlash", "Internetga ulanish", "Printerni ishlatish", "Klaviaturani sozlash"], correct: 0 },
-    { question: "Papkani kompyuterdan qanday o‘chirsa bo‘ladi?", options: ["Enter tugmasi bilan", "Kursorni papka ustiga olib borib mishkani o'ng tomini bosiladi Delete tugmasi bisiladi", "Shift tugmasi bilan", "Ctrl tugmasi bilan"], correct: 1 },
-    { question: "Kompyuterda dasturni ishga tushirish uchun nima qilinadi?", options: ["Dastur ikonkasini ikki marta bosish", "Klaviaturani o‘chirib yoqish", "Papkani ochish", "Monitorni o‘chirish"], correct: 0 },
-    { question: "Klaviaturadagi Backspace tugmasi nima qiladi?", options: ["Oxirgi yozilgan belgini o‘chiradi", "Yangi fayl yaratadi", "Kompyuterni o‘chiradi", "Papkani ochadi"], correct: 0 },
+    
+    { question: "Papka nima uchun ishlatiladi?", options: ["Ma'lumotlarni tartib bilan saqlash", "Internetga ulanish uchun", "Printerni ishlatish uchun"], correct: 0 },
+
+    { question: "Papkani kompyuterdan qanday o‘chirsa bo‘ladi?", options: ["Enter tugmasi bilan", "Kursorni papka ustiga olib borib mishkani o'ng tomini bosiladi Delete tugmasi bisiladi", "Shift tugmasi bilan", ], correct: 1 },
+
+    { question: "Kompyuterda dasturni ishga tushirish uchun nima qilinadi?", options: ["Dastur iconini ikki marta bosisladi", "Klaviaturani o‘chirib yoqiladi", "Papkani ochiladi"], correct: 0 },
+
+    { question: "Kompyuterning asosiy qurilmalari qaysi javobda to'gri berilgan?", options:
+         ["Monitor,Mishka,Printer",
+             "Sistema Blog,Klaviatura",
+              "Klaviatura, Monitor,Sistema Blok"], 
+              correct: 2 },
+
+    { question: "Klaviaturadagi Backspace tugmasini bosilsa nima bo'ladi?", options: ["Oxirgi yozilgan belgini o‘chiradi", "Yangi fayl yaratadi", "Kompyuterni o‘chiradi"], correct: 0 },
+
     { question: "Kompyuter tilini o‘zgartirish uchun klaviaturani qaysi tugmalari ishlatiladi?", options: ["Alt + Shift", "Delete", "Shift + Ctrl", "Shit + A"], correct: 0 },
-    { question: "Klaviaturadagi bo'sh joy tashlaydigan tugmaning nomi nima ?", options: ["Shift", "Delete", "Probil", "Alt"], correct: 2 },
-    { question: "Kompyuterga yozish uchun qaysi qurilma ishlatiladi?", options: ["Speaker", "Monitor", "Printer", " Klaviatura"], correct: 3 },
-    { question: "Kompyuter papkasini yaratish uchun nima qilinadi?", options: ["Bo‘sh joyga mishkani o‘ng tugmani bosib 'New, Folder' tanlash", "Enter tugmasini bosish", "Backspace tugmasini bosish", "Papkani o‘chirish"], correct: 0 },
-    { question: "Printer nima uchun ishlatiladi?", options: ["Klaviaturani ishlatish", " Matn yoki rasmni qog‘ozga chiqarish", "Dastur yozish", "Papka yaratish"], correct: 1 },
-    { question: "Ilk sichqonchani kim va qachon yaratgan ?", options: ["1968-yil Duglas Engelbar", "1962-yil Toms  Edison", "2000-yil Honred Zuse", "1932-yil Genri Ford"], correct: 0 },
-    { question: "Michkani o'ng tugmasi bosilsa nima bo'ladi?", options: ["Hechnima", "Buyruqlar oynasi ochiladi", "Dasturga kiradi", "Mishkani o'ng tugmasi yo'q"], correct: 1 },
-    { question: "This Pc (Etot kompyuter) ga qanday kiriladi?", options: ["Pusk + E tugmalarini bosib", "Pusk + I tugmalarini bosib", "Pusk + Ctrl tugmalarini bosib", "Shiftni  bosib"], correct: 0 },
-    { question: "kompyuterni settings oynasiga qanday kiriladi?", options: ["Pusk + E tugmalarini bosib", "Pusk + I tugmalarini bosib", "Pusk + Ctrl tugmalarini bosib", "Shiftni  bosib"], correct: 1 },
-    { question: "Michkani chap tugmasi bosilsa nima bo'ladi?", options: ["Tanlangan matnni nusxalaydi", "Papka yaratadi", "Tanlangan buyruqni bajaradi", "Kompyuterni o‘chiradi"], correct: 2 },
-    { question: "Rabochchi stoldagi fon rasmini qanday o'zgartiriladi?", options: ["Mishkani o'ng tomoni bosiladi personalise bosiladi", "Fayl yaratadi", "Papkani ochadi", "Kompyuterni qayta ishga tushiradi"], correct: 0 },
-    { question: "Monitorda mishka bilan harakatlanadigan narsaning nomi nima?", options: ["Mishka", "Kursor", "Backspace ", "Shift"], correct: 1 },
-    { question: "Kompyuterda dasturni yopish uchun qaysi tugma ishlatiladi?", options: ["X tugmasi (Windowning yuqori o‘ng burchagida)", "Enter", "Backspace", "Ctrl + C"], correct: 0 },
-    { question: "Barcha harflarni katta yozish uchun qaysi tugma bosiladi?", options: ["Caps Lock", "Shift", "Ctrl", "Alt"], correct: 0 }
+
+    { question: "Bo’sh joy tashash uchun klaviaturaning qaysi tugmasidan foydalanamiz?", options: ["Shift", "Delete", "Probil"], correct: 2 },
+
+    { question: "Kompyuterga yozish uchun qaysi qurilma ishlatiladi?", options: [ "Monitor", "Printer", " Klaviatura"], correct: 2 },
+
+    { question: "Kompyuterning qo‘shimcha qurilmasini  toping?", options: ["Sistema blog", "Klaviatura",  "Sichqoncha"], correct: 2 },
+    
+    { question: "Kompyuterda papka yaratish ketma-ketligi qaysi javobda to'g'ri?", options: ["Bo‘sh joyga mishkani o‘ng tugmani bosib 'New, Folder' tanlash", "Enter tugmasini bosish", "Backspace tugmasini bosish"], correct: 0 },
+
+    { question: "Printer nima uchun ishlatiladi?", options: ["Klaviaturani ishlatish", " Matn yoki rasmni qog‘ozga chiqarish", "Papka yaratish"], correct: 1 },
+
+    { question: "Ilk sichqonchani kim va qachon yaratgan ?", options: ["1968-yil Duglas Engelbar", "1962-yil Toms  Edison", "2000-yil Honred Zuse"], correct: 0 },
+
+    { question: "Michkani o'ng tugmasi bosilsa nima bo'ladi?", options: [ "Buyruqlar oynasi ochiladi", "Dasturga kiradi", "Mishkani o'ng tugmasi yo'q"], correct: 0 },
+
+    { question: "Klaviaturaning vazifasi nima?", options: [ "Kompyuterni ishlashini taminlash.", "Kopyuterga turli ma’lumotlarni kiritish","Kompyuterga jo’natilgan turli ma’lumotlarni  ko’rsatish."], correct: 0 },
+
+    { question: "Kompyuterni ho’l qo’l bilan ishlatsa bo’ladimi?", options: ["Ha", "Yo'q", "Bilmayman"], correct: 1 },
+
+    { question: "Michkani chap tugmasi bosilsa nima bo'ladi?", options: ["Tanlangan matnni nusxalaydi", "Papka yaratadi", "Tanlangan buyruqni bajaradi"], correct: 2 },
+
+    { question: "Kopyuterni orqa fonini o’zgartirish uchun amallar ketmaketligini tanlang.", options: ["Kompyuter sichqonchasini chap tarafi bosiladi va personalizatsiya bo’limiga kiriladi.", "Sichqonchaning o’ng tarafi bosiladi va personalizatsiy bo’limiga kiriladi.", "Kompyuterni qayta ishga tushiradi"], correct: 1 },
+    
+    { question: "Monitorda mishka bilan harakatlanadigan narsaning nomi nima?", options: ["Mishka", "Kursor", "Backspace "], correct: 1 },
+
+    { question: "Kompyuterda dasturni yopish uchun qaysi tugma ishlatiladi?", options: [ "Enter", "Backspace","X tugmasi (Windowning yuqori o‘ng burchagida)",], correct: 2 },
+
+    { question: "Barcha harflarni bosh harfda yozish uchun qaysi tugmadan foydalanamiz?", options: ["Caps Lock", "Shift", "Ctrl"], correct: 0 }
 ];
 
 // Raqamlarni aralashtirish (1–20)
@@ -29,7 +53,7 @@ function shuffle(array){
     }
     return array;
 }
-let seats = shuffle(Array.from({length:20},(_,i)=>i+1));
+let seats = shuffle(Array.from({length:18},(_,i)=>i+1));
 let seatIndex = 0;
 
 const quizContainer=document.getElementById('quiz-container');
